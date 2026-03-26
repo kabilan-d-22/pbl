@@ -3,7 +3,7 @@ import axios from 'axios';
 // Since we set up a proxy in vite.config.js, 
 // we can use '/api' as the base URL.
 const api = axios.create({
-  baseURL:  '/api',
+  baseURL: 'https://pbl-fz9g.onrender.com/api',
   headers: {
     'Content-Type': 'application/json'
   }
