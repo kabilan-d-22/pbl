@@ -12,10 +12,7 @@ if (!process.env.MONGODB_URI || !process.env.JWT_SECRET) {
 const app = express();
 
 // Configure CORS: Allow your frontend URL in production
-app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
-  credentials: true
-}));
+app.use(cors());
 
 app.use(express.json());
 
