@@ -1,0 +1,66 @@
+/* app.css */
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove unwanted side spacing */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fb; /* soft light background */
+  font-family: 'Inter', sans-serif;
+}
+
+/* Remove horizontal scroll if any layout overflows */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===== LINKS ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== BUTTON HOVER SMOOTH ===== */
+button {
+  transition: all 0.25s ease;
+}
+
+/* ===== OPTIONAL: CENTERED LOGIN PAGE ===== */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f7fb;
+}
+
+/* ===== REMOVE ANY DEFAULT IMAGE STRETCH ===== */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== SCROLLBAR (optional modern UI look) ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}

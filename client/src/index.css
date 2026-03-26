@@ -1,0 +1,67 @@
+/* index.css */
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== ROOT VARIABLES (optional, keep if you use them) ===== */
+:root {
+  --text: inherit;
+  --text-h: inherit;
+  --bg: inherit;
+  --border: #e5e4e7;
+  --accent: #1976d2;
+
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+  color: inherit;
+  overflow-x: hidden;
+}
+
+/* ===== ROOT (IMPORTANT FIX) ===== */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== LINKS ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== BUTTON SMOOTH ===== */
+button {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* ===== IMAGES ===== */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== SCROLLBAR (optional modern look) ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
