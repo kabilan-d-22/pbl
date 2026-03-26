@@ -160,7 +160,7 @@ const Register = () => {
 
               <Typography align="center">
                 Already have an account?{' '}
-                <Link to="/login" style={{ textDecoration: 'none', color: '#1976d2' }}>
+                <Link to="/" style={{ textDecoration: 'none', color: '#1976d2' }}>
                   Login
                 </Link>
               </Typography>

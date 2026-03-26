@@ -51,8 +51,8 @@ const Layout = ({ children, darkMode, toggleDarkMode }) => {
   ];
 
   const handleLogout = () => {
-    logout();
-    navigate('/login');
+    navigate('/');
+    logout(); 
   };
 
   const drawer = (

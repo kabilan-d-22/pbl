@@ -91,7 +91,7 @@ function App() {
               }
             />
             {/* UPDATED: Redirect to /analytics instead of /dashboard */}
-            <Route path="/" element={<Navigate to="/analytics" />} />
+            <Route path="/analytics" element={<Navigate to="/analytics" />} />
           </Routes>
         </Router>
       </AuthProvider>

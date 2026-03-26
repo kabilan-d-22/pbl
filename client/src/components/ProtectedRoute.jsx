@@ -9,7 +9,7 @@ const ProtectedRoute = ({ children, requireHead = false }) => {
   }
 
   if (!user) {
-    return <Navigate to="/login" />;
+    return <Navigate to="/" />;
   }
 
   if (requireHead && user.role !== 'Head') {
