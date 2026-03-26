@@ -45,7 +45,7 @@ function App() {
       <AuthProvider>
         <Router>
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={user ? <Navigate to="/analytics" /> : <Login />} />
             <Route path="/register" element={<Register />} />
             
             {/* REMOVED: /dashboard route */}
@@ -91,7 +91,7 @@ function App() {
               }
             />
             {/* UPDATED: Redirect to /analytics instead of /dashboard */}
-            <Route path="/analytics" element={<Navigate to="/analytics" />} />
+            <Route path="/dashboard" element={<Navigate to="/analytics" replace />} />
           </Routes>
         </Router>
       </AuthProvider>

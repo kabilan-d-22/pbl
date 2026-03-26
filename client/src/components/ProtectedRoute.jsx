@@ -3,6 +3,7 @@ import { useAuth } from '../context/AuthContext';
 
 const ProtectedRoute = ({ children, requireHead = false }) => {
   const { user, loading } = useAuth();
+  const hasToken = localStorage.getItem('token');
 
   if (loading) {
     return <div>Loading...</div>;
