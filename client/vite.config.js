@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:3001', // Target local server during development
+        target: 'https://pbl-fz9g.onrender.com', // Target local server during development
         changeOrigin: true,
         secure: false,
       },
