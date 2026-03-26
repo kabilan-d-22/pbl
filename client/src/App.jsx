@@ -1,3 +1,4 @@
+import { useAuth } from './context/AuthContext';
 import { useState, useMemo, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
@@ -12,6 +13,7 @@ import Team from './pages/Team';
 import Profile from './pages/Profile';
 
 function App() {
+  const { user } = useAuth();
   // ✅ Load saved theme
   const [darkMode, setDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -42,7 +44,6 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AuthProvider>
         <Router>
           <Routes>
             <Route path="/" element={user ? <Navigate to="/analytics" /> : <Login />} />
@@ -94,7 +95,6 @@ function App() {
             <Route path="/dashboard" element={<Navigate to="/analytics" replace />} />
           </Routes>
         </Router>
-      </AuthProvider>
     </ThemeProvider>
   );
 }
