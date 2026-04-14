@@ -54,4 +54,10 @@ export const aiAPI = {
   askAssistant: (prompt) => api.post('/ai/ask', { prompt })
 };
 
+export const chatAPI = {
+  getMessages: (otherUserId) => api.get(`/chat/${otherUserId}`),
+  sendMessage: (data) => api.post('/chat/send', data),
+  deleteConversation: (otherUserId) => api.delete(`/chat/${otherUserId}`)
+};
+
 export default api;

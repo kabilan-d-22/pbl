@@ -27,7 +27,8 @@ import {
   Person as ProfileIcon,
   Logout as LogoutIcon,
   Brightness4 as DarkModeIcon,
-  Brightness7 as LightModeIcon
+  Brightness7 as LightModeIcon,
+  Chat as ChatIcon
 } from '@mui/icons-material';
 
 const DRAWER_WIDTH = 280;
@@ -46,6 +47,7 @@ const Layout = ({ children, darkMode, toggleDarkMode }) => {
   const menuItems = [
     { text: 'Analytics', icon: <AnalyticsIcon />, path: '/analytics' },
     { text: 'Tasks', icon: <TaskIcon />, path: '/tasks' },
+    { text: 'Chat', icon: <ChatIcon />, path: '/chat' },
     ...(isHead ? [{ text: 'Team', icon: <TeamIcon />, path: '/team' }] : []),
     { text: 'Profile', icon: <ProfileIcon />, path: '/profile' }
   ];
